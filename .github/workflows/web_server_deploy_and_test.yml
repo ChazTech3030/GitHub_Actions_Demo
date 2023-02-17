@@ -5,7 +5,7 @@ jobs:
   demo_job_for_demo_sake:
     runs-on: ubuntu-latest
     steps:
-      -name: ECHOO (echo)
+      - name: ECHOO (echo)
         run: echo "Does this work?"
   test_web_app:
     runs-on: ubuntu-latest
