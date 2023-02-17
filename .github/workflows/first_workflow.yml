@@ -1,0 +1,11 @@
+name: First Local Workflow Demonstration
+on: push
+
+jobs:
+  echo_commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo 1st
+        run: |
+          echo "1st message"
+          echo "2nd message"
