@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Show Some Info
-        run: echo "${{ github.repository_owner }}"
+        run: echo "${{ toJSON(github) }}"
