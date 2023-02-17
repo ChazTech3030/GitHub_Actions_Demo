@@ -1,3 +1,3 @@
 # My GitHub Actions Repo 
 
-Some information entered here before commiting
+Changing some text so that we can commit to the main branch
