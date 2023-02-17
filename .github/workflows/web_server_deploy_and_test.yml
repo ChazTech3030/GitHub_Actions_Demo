@@ -11,7 +11,7 @@ jobs:
           docker container run -d -p 8080:80 nginx
       - name: Test Web App is Running
         run: |
-          python3 -c "import requests; r = requests.get('http://asdasdasdasdasd:8080'); print(r.status_code)"
+          python3 -c "import requests; r = requests.get('http://localhost:8080'); print(r.status_code)"
           curl -s localhost:8080
   deploy_web_app:
     needs: test_web_app
