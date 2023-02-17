@@ -1,11 +1,13 @@
-name: First Local Workflow Demonstration
+name: Deploy and Test Code Base
 on: push
 
 jobs:
-  echo_commands:
+  test_code:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo 1st
+      - name: Download the Repo
+        uses: actions/checkout
+      - name: Investigate the Environment
         run: |
-          echo "1st message"
-          echo "2nd message"
+          pwd
+          ls -lart
